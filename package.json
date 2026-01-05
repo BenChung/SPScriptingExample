@@ -1,0 +1,25 @@
+{
+  "name": "example-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": { 
+    "build": "npm exec tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.10.4",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "json-rpc-2.0": "^1.7.1",
+    "tslib": "^2.8.1"
+  },
+  "paths": {
+    "spruntime": [
+      "inc/runtime.d.ts"
+    ]
+  }
+}

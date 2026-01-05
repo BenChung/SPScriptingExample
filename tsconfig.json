@@ -1,0 +1,36 @@
+{
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "composite": true,
+    "target": "es5",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "sourceMap": true,
+    /* Modules */
+    "module": "esnext",                                /* Specify what module code is generated. */
+    "rootDir": "./src",                                  /* Specify the root folder within your source files. */
+    "moduleResolution": "node",                     /* Specify how TypeScript looks up a file from a given module specifier. */
+    "declaration": true,                              /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "lib": [
+      "ES5",
+      "ES2015.Promise",
+      "ES2018.Promise",
+      "ES2020.Promise",
+      "ES2021.Promise",
+      "ES2024.Promise",
+      "ESNext.Promise",
+      "ESNext.AsyncIterable",
+      "DOM",
+      "ESNext.Iterator"
+    ],
+    "paths": {
+        "spruntime": ["./inc/spruntime/index.d.ts"],
+    },
+  },
+
+}
